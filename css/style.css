@@ -1,8 +1,10 @@
 body {
 
     background-color: thistle !important;
-
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px;
 }
+#Navbar{font-size: 18px;}
 
 /* Style the video: 100% width and height to cover the entire window */
 
@@ -83,7 +85,7 @@ video#bgvid {
     margin-left: auto;
     margin-top: 20%;
     margin-bottom: 5%;
-    
+
 
     -webkit-animation: fadein 6s;
     /* Safari, Chrome and Opera > 12.1 */
@@ -170,4 +172,89 @@ video#bgvid {
 
 #cf img.top:hover {
     opacity: 0;
+}
+
+
+
+
+
+.signupWrapper{
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px #000;
+    text-align: left;
+}
+.signupForm{color: #000;}
+
+.createAccButtonDiv{text-align: center;}
+#createAccButton{
+    	font-family: Arial, Helvetica, sans-serif;
+    	font-size: 18px;
+    	color: #fff;
+        text-shadow: 1px 1px 1px #000;
+    	padding: 10px 10px;
+        background-color: #925ee5;
+        border: 0px;
+    	border-radius: 7px;
+        box-shadow: 1px 1px 1px #000;
+}
+#createAccButton:hover{
+    	font-family: Arial, Helvetica, sans-serif;
+    	font-size: 18px;
+    	color: #fff;
+        text-shadow: 1px 1px 1px #000;
+    	padding: 10px 10px;
+        background-color: #44227a;
+        border: 0px;
+    	border-radius: 7px;
+        box-shadow: 1px 1px 1px #000;
+}
+.yearDiv{display: inline-block; z-index: 1;}
+.monthDiv{display: inline-block; z-index: 1;}
+.dayDiv{display: inline-block; z-index: 1;}
+
+
+@media screen and (max-width: 600px) and (min-width: 520px) {
+    .signupWrapper{
+        margin-top: 5%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 0px;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 1px 1px 1px 1px #000;
+        text-align: left;
+    }
+    .signupForm{color: #000;}
+
+    .createAccButtonDiv{text-align: center;}
+    #createAccButton{
+        	font-family: Arial, Helvetica, sans-serif;
+        	font-size: 18px;
+        	color: #fff;
+            text-shadow: 1px 1px 1px #000;
+        	padding: 10px 10px;
+            background-color: #925ee5;
+            border: 0px;
+        	border-radius: 7px;
+            box-shadow: 1px 1px 1px #000;
+    }
+    #createAccButton:hover{
+        	font-family: Arial, Helvetica, sans-serif;
+        	font-size: 18px;
+        	color: #fff;
+            text-shadow: 1px 1px 1px #000;
+        	padding: 10px 10px;
+            background-color: #44227a;
+            border: 0px;
+        	border-radius: 7px;
+            box-shadow: 1px 1px 1px #000;
+    }
+    .yearDiv{display: inline-block; z-index: 1;}
+    .monthDiv{display: inline-block; z-index: 1;}
+    .dayDiv{display: inline-block; z-index: 1;}
 }
