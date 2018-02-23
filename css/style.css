@@ -34,6 +34,47 @@ video#bgvid {
     z-index: -1;
 }
 
+
+/*Div to center the button*/
+
+.sectionButtonDiv {
+    text-align: center;
+
+    display: -webkit-flex;
+    /* Safari */
+    -webkit-justify-content: space-around;
+    /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+.heart {
+    animation: beat 0.7s infinite alternate;
+    max-width: 200px;
+    display: block;
+    max-height: 95px;
+    width: auto;
+    height: auto;
+
+}
+
+/* Beating animation */
+
+@keyframes beat {
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.image {
+    max-width: 200px
+}
+
+
+
 /*Image fade in*/
 
 .logoImg {
@@ -41,7 +82,8 @@ video#bgvid {
     margin-right: auto;
     margin-left: auto;
     margin-top: 20%;
-
+    margin-bottom: 5%;
+    
 
     -webkit-animation: fadein 6s;
     /* Safari, Chrome and Opera > 12.1 */
