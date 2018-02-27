@@ -4,7 +4,10 @@ body {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 18px;
 }
-#Navbar{font-size: 18px;}
+
+#Navbar {
+    font-size: 18px;
+}
 
 /* Style the video: 100% width and height to cover the entire window */
 
@@ -48,6 +51,16 @@ video#bgvid {
     /* Safari 6.1+ */
     display: flex;
     justify-content: space-around;
+
+    -webkit-animation: fadein 7s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 7s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 7s;
+    /* Internet Explorer */
+    -o-animation: fadein 7s;
+    /* Opera < 12.1 */
+    animation: fadein 7s;
 }
 
 
@@ -60,6 +73,8 @@ video#bgvid {
     max-height: 95px;
     width: auto;
     height: auto;
+
+
 
 }
 
@@ -87,15 +102,15 @@ video#bgvid {
     margin-bottom: 5%;
 
 
-    -webkit-animation: fadein 6s;
+    -webkit-animation: fadein 7s;
     /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 6s;
+    -moz-animation: fadein 7s;
     /* Firefox < 16 */
-    -ms-animation: fadein 6s;
+    -ms-animation: fadein 7s;
     /* Internet Explorer */
-    -o-animation: fadein 6s;
+    -o-animation: fadein 7s;
     /* Opera < 12.1 */
-    animation: fadein 6s;
+    animation: fadein 7s;
 }
 
 @keyframes fadein {
@@ -178,7 +193,7 @@ video#bgvid {
 
 
 
-.signupWrapper{
+.signupWrapper {
     margin-top: 5%;
     margin-left: 30%;
     margin-right: 30%;
@@ -188,38 +203,57 @@ video#bgvid {
     box-shadow: 1px 1px 1px 1px #000;
     text-align: left;
 }
-.signupForm{color: #000;}
 
-.createAccButtonDiv{text-align: center;}
-#createAccButton{
-    	font-family: Arial, Helvetica, sans-serif;
-    	font-size: 18px;
-    	color: #fff;
-        text-shadow: 1px 1px 1px #000;
-    	padding: 10px 10px;
-        background-color: #925ee5;
-        border: 0px;
-    	border-radius: 7px;
-        box-shadow: 1px 1px 1px #000;
+.signupForm {
+    color: #000;
 }
-#createAccButton:hover{
-    	font-family: Arial, Helvetica, sans-serif;
-    	font-size: 18px;
-    	color: #fff;
-        text-shadow: 1px 1px 1px #000;
-    	padding: 10px 10px;
-        background-color: #44227a;
-        border: 0px;
-    	border-radius: 7px;
-        box-shadow: 1px 1px 1px #000;
+
+.createAccButtonDiv {
+    text-align: center;
 }
-.yearDiv{display: inline-block; z-index: 1;}
-.monthDiv{display: inline-block; z-index: 1;}
-.dayDiv{display: inline-block; z-index: 1;}
+
+#createAccButton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    padding: 10px 10px;
+    background-color: #925ee5;
+    border: 0px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px #000;
+}
+
+#createAccButton:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    padding: 10px 10px;
+    background-color: #44227a;
+    border: 0px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px #000;
+}
+
+.yearDiv {
+    display: inline-block;
+    z-index: 1;
+}
+
+.monthDiv {
+    display: inline-block;
+    z-index: 1;
+}
+
+.dayDiv {
+    display: inline-block;
+    z-index: 1;
+}
 
 
 @media screen and (max-width: 600px) and (min-width: 520px) {
-    .signupWrapper{
+    .signupWrapper {
         margin-top: 5%;
         margin-left: 0%;
         margin-right: 0%;
@@ -229,32 +263,45 @@ video#bgvid {
         box-shadow: 1px 1px 1px 1px #000;
         text-align: left;
     }
-    .signupForm{color: #000;}
+    .signupForm {
+        color: #000;
+    }
 
-    .createAccButtonDiv{text-align: center;}
-    #createAccButton{
-        	font-family: Arial, Helvetica, sans-serif;
-        	font-size: 18px;
-        	color: #fff;
-            text-shadow: 1px 1px 1px #000;
-        	padding: 10px 10px;
-            background-color: #925ee5;
-            border: 0px;
-        	border-radius: 7px;
-            box-shadow: 1px 1px 1px #000;
+    .createAccButtonDiv {
+        text-align: center;
     }
-    #createAccButton:hover{
-        	font-family: Arial, Helvetica, sans-serif;
-        	font-size: 18px;
-        	color: #fff;
-            text-shadow: 1px 1px 1px #000;
-        	padding: 10px 10px;
-            background-color: #44227a;
-            border: 0px;
-        	border-radius: 7px;
-            box-shadow: 1px 1px 1px #000;
+    #createAccButton {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        padding: 10px 10px;
+        background-color: #925ee5;
+        border: 0px;
+        border-radius: 7px;
+        box-shadow: 1px 1px 1px #000;
     }
-    .yearDiv{display: inline-block; z-index: 1;}
-    .monthDiv{display: inline-block; z-index: 1;}
-    .dayDiv{display: inline-block; z-index: 1;}
+    #createAccButton:hover {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        padding: 10px 10px;
+        background-color: #44227a;
+        border: 0px;
+        border-radius: 7px;
+        box-shadow: 1px 1px 1px #000;
+    }
+    .yearDiv {
+        display: inline-block;
+        z-index: 1;
+    }
+    .monthDiv {
+        display: inline-block;
+        z-index: 1;
+    }
+    .dayDiv {
+        display: inline-block;
+        z-index: 1;
+    }
 }
